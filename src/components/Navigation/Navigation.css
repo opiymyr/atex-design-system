@@ -1,0 +1,15 @@
+.navigation {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 488px;
+  height: 52px;
+  padding: 4px;
+  border-radius: var(--radius-full);
+  background: var(--color-white);
+}
+
+.navigation--compact {
+  width: 196px;
+}

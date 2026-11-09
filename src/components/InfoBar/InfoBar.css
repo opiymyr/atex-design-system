@@ -1,0 +1,27 @@
+.info-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 146px;
+  height: 28px;
+  color: var(--color-primary);
+}
+
+.info-bar__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 28px;
+}
+
+.info-bar__icon svg {
+  flex-shrink: 0;
+}
+
+.info-bar__skeleton {
+  width: 92px;
+  height: 28px;
+  border-radius: var(--radius-full);
+  background: var(--color-cell-header);
+}

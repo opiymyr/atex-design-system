@@ -1,0 +1,31 @@
+.status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 92px;
+  height: 28px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-radius: var(--radius-full);
+  font-size: 16px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.status svg {
+  display: block;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.status--blue { background: var(--color-primary-bg); color: var(--color-primary); }
+.status--green { background: var(--color-green-bg); color: var(--color-green); }
+.status--orange { background: var(--color-orange-bg); color: var(--color-orange); }
+.status--red { background: var(--color-red-bg); color: var(--color-red); }
+
+.status--purple {
+  background: color-mix(in srgb, var(--color-purple) 15%, white);
+  color: var(--color-purple);
+}

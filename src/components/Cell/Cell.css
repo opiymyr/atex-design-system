@@ -1,0 +1,45 @@
+.cell {
+  --bg: var(--color-cell);
+  --bg-hover: var(--color-primary-bg);
+  --fg: var(--color-black);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  box-sizing: border-box;
+  height: 44px;
+  padding: 0 12px;
+  border-radius: var(--radius-full);
+  background: var(--bg);
+  color: var(--fg);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.cell:hover {
+  background: var(--bg-hover);
+}
+
+.cell--header {
+  --bg: var(--color-cell-header);
+  --bg-hover: var(--color-sky);
+  --fg: var(--color-primary);
+}
+
+.cell__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cell__icon {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.cell--loading,
+.cell--loading:hover {
+  background: var(--bg);
+  cursor: default;
+}

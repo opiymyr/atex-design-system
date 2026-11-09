@@ -1,0 +1,44 @@
+.option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--color-gray);
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.option_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+  background: var(--color-light);
+  color: var(--color-white);
+}
+
+.option_box svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.option-selected {
+  color: var(--color-primary);
+}
+
+.option-selected .option_box {
+  background: var(--color-primary);
+}
+
+.option-selected .option_box svg {
+  opacity: 1;
+}

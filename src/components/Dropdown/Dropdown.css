@@ -1,0 +1,10 @@
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-sizing: border-box;
+  width: 141px;
+  padding: 12px;
+  border-radius: var(--radius-lg);
+  background: var(--color-white);
+}

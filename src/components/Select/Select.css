@@ -1,0 +1,51 @@
+.select {
+  position: relative;
+  display: inline-block;
+}
+
+.select_trigger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 117px;
+  height: 44px;
+  padding: 0 16px;
+  background: var(--color-primary-bg);
+  border: none;
+  border-radius: var(--radius-full);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.select_icon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  transform: rotate(180deg);
+}
+
+.select-open .select_icon {
+  transform: none;
+}
+
+.select_icon svg {
+  display: block;
+}
+
+.select_menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 8px;
+  width: 131px;
+  background: var(--color-primary-bg);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  z-index: 10;
+  min-width: 131px;
+  width: max-content;
+}

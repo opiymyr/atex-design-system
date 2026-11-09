@@ -1,0 +1,72 @@
+.textarea {
+  position: relative;
+  box-sizing: border-box;
+  width: 278px;
+  height: 191px;
+  border-radius: var(--radius-lg);
+  background: var(--color-primary-bg);
+}
+
+.textarea:hover {
+  background: var(--color-light);
+}
+
+.textarea:focus-within {
+  background: color-mix(in srgb, var(--color-primary) 18%, white);
+}
+
+.textarea__field {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 12px 16px 32px;
+  border: none;
+  outline: none;
+  resize: none;
+  background: transparent;
+  color: var(--color-black);
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.textarea__field::placeholder {
+  color: var(--color-gray);
+  opacity: 1;
+}
+
+.textarea:focus-within {
+  color: var(--color-primary);
+}
+
+.textarea__count {
+  position: absolute;
+  right: 16px;
+  bottom: 12px;
+  font-size: 12px;
+  color: var(--color-gray);
+  pointer-events: none;
+}
+
+.textarea.textarea--disabled {
+  background: var(--color-light);
+}
+
+.textarea--disabled .textarea__field {
+  cursor: not-allowed;
+}
+
+.textarea.textarea--success {
+  background: var(--color-green-bg);
+}
+
+.textarea--success .textarea__field {
+  color: var(--color-green);
+}
+
+.textarea.textarea--error {
+  background: var(--color-red-bg);
+}
+
+.textarea--error .textarea__field {
+  color: var(--color-red-bright);
+}

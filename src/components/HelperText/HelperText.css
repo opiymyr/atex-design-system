@@ -1,0 +1,21 @@
+.helper-text {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 61px;
+  height: 23px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-radius: var(--radius-full);
+  font-size: 12px;
+}
+
+.helper-text-success {
+  background: var(--color-green-bg);
+  color: var(--color-green);
+}
+
+.helper-text-error {
+  background: var(--color-red-bg);
+  color: var(--color-red);
+}

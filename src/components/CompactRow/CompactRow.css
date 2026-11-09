@@ -1,0 +1,41 @@
+.compact-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-sizing: border-box;
+  width: 286px;
+  padding: 12px;
+  border-radius: var(--radius-lg);
+  background: var(--color-cell);
+}
+
+.compact-row:hover {
+  background: var(--color-cell-header);
+}
+
+.compact-row--loading:hover {
+  background: var(--color-cell);
+}
+
+.compact-row--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.compact-row .info-bar {
+  gap: 0;
+}
+
+.compact-row__field {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 262px;
+  height: 44px;
+  padding: 0 12px;
+  border-radius: var(--radius-full);
+  background: var(--color-primary-bg);
+  color: var(--color-primary);
+  font-size: 16px;
+  font-weight: 500;
+}

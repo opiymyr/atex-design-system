@@ -1,0 +1,18 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-sizing: border-box;
+  width: 1318px;
+  height: 396px;
+  padding: 12px 0;
+  border-radius: var(--radius-lg);
+  background: var(--color-white);
+}
+
+
+.table__footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 12px 0;
+}
