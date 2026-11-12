@@ -15,7 +15,7 @@ export function NavigationItem({ icon, selected, onClick, children, ...rest }: P
     <button
       type="button"
       aria-selected={active}
-      className={active ? 'navig navig--selected' : 'navig'}
+      className={active ? 'navig navig-selected' : 'navig'}
       onClick={(e) => {
         setOwn(!own);
         onClick?.(e);

@@ -13,7 +13,7 @@ export function Navigation({ items, compact }: Props) {
   const [active, setActive] = useState(items[0]?.id);
 
   return (
-    <nav className={compact ? 'navigation navigation--compact' : 'navigation'}>
+    <nav className={compact ? 'navigation navigation-compact' : 'navigation'}>
       {items.map((it) =>
         compact ? (
           <NavigationItemCompact

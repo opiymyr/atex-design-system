@@ -15,7 +15,7 @@ export function NavigationItemCompact({ icon, selected, onClick, children, ...re
     <button
       type="button"
       aria-selected={active}
-      className={active ? 'navigcom navigcom--selected' : 'navigcom'}
+      className={active ? 'navigcom navigcom-selected' : 'navigcom'}
       onClick={(e) => {
         setOwn(!own);
         onClick?.(e);

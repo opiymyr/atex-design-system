@@ -6,10 +6,10 @@
   width: 446px;
   padding: 12px;
   border-radius: var(--radius-lg);
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
-.list__footer {
+.list_footer {
   display: flex;
   justify-content: flex-end;
 }

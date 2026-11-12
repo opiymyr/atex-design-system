@@ -8,29 +8,29 @@
   padding: 0 12px 0 22px;
 }
 
-.row--selected {
+.row-selected {
   background: var(--color-cell-header);
 }
 
-.row--disabled {
+.row-disabled {
   opacity: 0.5;
   pointer-events: none;
 }
 
-.row__check {
+.row_check {
   display: flex;
   justify-content: center;
   width: 24px;
   margin-right: 10px;
 }
 
-.row__status {
+.row_status {
   display: flex;
   justify-content: center;
   flex-shrink: 0;
 }
 
-.row__skeleton {
+.row_skeleton {
   width: 92px;
   height: 28px;
   border-radius: var(--radius-full);

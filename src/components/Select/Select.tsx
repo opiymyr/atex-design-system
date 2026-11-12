@@ -26,7 +26,7 @@ export function Select({ options, selected = [], onChange, label = 'Выбрат
     onChange?.(selected.includes(id) ? selected.filter((s) => s !== id) : [...selected, id]);
 
   return (
-    <div className={open ? 'select select--open' : 'select'} ref={ref}>
+    <div className={open ? 'select select-open' : 'select'} ref={ref}>
       <button type="button" className="select_trigger" onClick={() => setOpen(!open)}>
         {label}
         <span className="select_icon">

@@ -12,10 +12,10 @@
 }
 
 .textarea:focus-within {
-  background: color-mix(in srgb, var(--color-primary) 18%, white);
+  background: var(--color-focus-bg);
 }
 
-.textarea__field {
+.textarea_field {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
@@ -24,21 +24,21 @@
   outline: none;
   resize: none;
   background: transparent;
-  color: var(--color-black);
+  color: var(--color-text);
   font-family: inherit;
   font-size: 16px;
 }
 
-.textarea__field::placeholder {
+.textarea_field::placeholder {
   color: var(--color-gray);
   opacity: 1;
 }
 
 .textarea:focus-within {
-  color: var(--color-primary);
+  color: var(--color-accent);
 }
 
-.textarea__count {
+.textarea_count {
   position: absolute;
   right: 16px;
   bottom: 12px;
@@ -47,26 +47,26 @@
   pointer-events: none;
 }
 
-.textarea.textarea--disabled {
+.textarea.textarea-disabled {
   background: var(--color-light);
 }
 
-.textarea--disabled .textarea__field {
+.textarea-disabled .textarea_field {
   cursor: not-allowed;
 }
 
-.textarea.textarea--success {
+.textarea.textarea-success {
   background: var(--color-green-bg);
 }
 
-.textarea--success .textarea__field {
+.textarea-success .textarea_field {
   color: var(--color-green);
 }
 
-.textarea.textarea--error {
+.textarea.textarea-error {
   background: var(--color-red-bg);
 }
 
-.textarea--error .textarea__field {
+.textarea-error .textarea_field {
   color: var(--color-red-bright);
 }

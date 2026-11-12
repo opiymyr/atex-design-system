@@ -16,7 +16,7 @@ export function TabItem({ icon, selected, onClick, children, ...rest }: Props) {
       type="button"
       role="tab"
       aria-selected={active}
-      className={active ? 'tab tab--selected' : 'tab'}
+      className={active ? 'tab tab-selected' : 'tab'}
       onClick={(e) => {
         setOwn(!own);
         onClick?.(e);

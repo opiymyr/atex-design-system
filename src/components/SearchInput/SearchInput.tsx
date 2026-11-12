@@ -18,16 +18,16 @@ export function SearchInput({ value, onChange, placeholder = 'Введите т�
   };
 
   return (
-    <label className={text ? 'search-input search-input--filled' : 'search-input'}>
+    <label className={text ? 'search-input search-input-filled' : 'search-input'}>
       <SearchIcon />
       <input
-        className="search-input__field"
+        className="search-input_field"
         value={text}
         placeholder={placeholder}
         onChange={(e) => set(e.target.value)}
       />
       {text && (
-        <button type="button" className="search-input__clear" onClick={() => set('')}>
+        <button type="button" className="search-input_clear" onClick={() => set('')}>
           <CloseIcon />
         </button>
       )}

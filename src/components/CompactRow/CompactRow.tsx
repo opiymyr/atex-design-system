@@ -12,15 +12,15 @@ type Props = {
 };
 
 export function CompactRow({ status, variant, user, description, disabled, loading }: Props) {
-  const cls = ['compact-row', disabled && 'compact-row--disabled', loading && 'compact-row--loading']
+  const cls = ['compact-row', disabled && 'compact-row-disabled', loading && 'compact-row--loading']
     .filter(Boolean)
     .join(' ');
 
   return (
     <div className={cls}>
       <InfoBar status={status} variant={variant} loading={loading} />
-      <div className="compact-row__field">{user}</div>
-      <div className="compact-row__field">{description}</div>
+      <div className="compact-row_field">{!loading && user}</div>
+      <div className="compact-row_field">{!loading && description}</div>
     </div>
   );
 }

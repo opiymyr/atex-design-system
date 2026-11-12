@@ -8,12 +8,12 @@ import './Card.css';
 
 function Actions() {
   return (
-    <div className="card__actions">
-      <button type="button" className="card__button card__button--primary">
+    <div className="card_actions">
+      <button type="button" className="card_button card_button--primary">
         <EditIcon />
         Кнопка
       </button>
-      <button type="button" className="card__button">
+      <button type="button" className="card_button">
         <EditIcon />
         Кнопка
       </button>
@@ -23,8 +23,8 @@ function Actions() {
 
 function Line({ label, children }: { label: string; children: ReactNode }) {
   return (
-    <p className="card__line">
-      <span className="card__label">{label}:</span> {children}
+    <p className="card_line">
+      <span className="card_label">{label}:</span> {children}
     </p>
   );
 }
@@ -40,17 +40,17 @@ type EntityProps = {
 
 export function EntityCard({ status, variant, name, task, contacts, updated }: EntityProps) {
   return (
-    <div className="card card--entity">
+    <div className="card card-entity">
       <Status variant={variant}>{status}</Status>
-      <div className="card__user">
-        <span className="card__avatar">
+      <div className="card_user">
+        <span className="card_avatar">
           <UserIcon />
         </span>
-        <span className="card__title">{name}</span>
+        <span className="card_title">{name}</span>
       </div>
       <Line label="Задача">{task}</Line>
       <Line label="Контакты">{contacts}</Line>
-      <span className="card__updated">{updated}</span>
+      <span className="card_updated">{updated}</span>
       <Actions />
     </div>
   );

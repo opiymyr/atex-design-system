@@ -12,12 +12,8 @@
   white-space: nowrap;
 }
 
-.badge--blue { background: var(--color-primary-bg); color: var(--color-primary); }
-.badge--green { background: var(--color-green-bg); color: var(--color-green); }
-.badge--orange { background: var(--color-orange-bg); color: var(--color-orange); }
-.badge--red { background: var(--color-red-bg); color: var(--color-red-bright); }
-
-.badge--purple {
-  background: color-mix(in srgb, var(--color-purple) 15%, white);
-  color: var(--color-purple);
-}
+.badge-blue { background: var(--color-primary-bg); color: var(--color-accent); }
+.badge-green { background: var(--color-green-bg); color: var(--color-green); }
+.badge-orange { background: var(--color-orange-bg); color: var(--color-orange); }
+.badge-red { background: var(--color-red-bg); color: var(--color-red-bright); }
+.badge-purple { background: var(--color-purple-bg); color: var(--color-purple);}

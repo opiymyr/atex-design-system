@@ -12,7 +12,7 @@ export function Input({ status, width, height, style, ...rest }: Props) {
     <input
       {...rest}
       style={{ width, height, ...style }}
-      className={status ? `input input--${status}` : 'input'}
+      className={status ? `input input-${status}` : 'input'}
     />
   );
 }

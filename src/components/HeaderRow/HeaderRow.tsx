@@ -14,7 +14,7 @@ const keys = Object.keys(widths) as (keyof typeof widths)[];
 export function HeaderRow({ checked, onCheck }: Props) {
   return (
     <div className="row">
-      <span className="row__check">
+      <span className="row_check">
         <Checkbox checked={!!checked} onChange={(e) => onCheck?.(e.target.checked)} />
       </span>
       {keys.map((key) => (

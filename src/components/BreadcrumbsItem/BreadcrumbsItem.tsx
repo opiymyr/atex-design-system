@@ -11,7 +11,7 @@ export function BreadcrumbsItem({ selected, onClick, ...rest }: Props) {
   return (
     <button
       type="button"
-      className={active ? 'crumb crumb--selected' : 'crumb'}
+      className={active ? 'crumb crumb-selected' : 'crumb'}
       onClick={(e) => {
         setOwn(!own);
         onClick?.(e);

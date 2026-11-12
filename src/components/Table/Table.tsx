@@ -49,7 +49,7 @@ export function Table({ items, page, pages, onPageChange }: Props) {
         ))}
       </div>
 
-      <div className="table__footer">
+      <div className="table_footer">
         <Pagination page={page} total={pages} onChange={onPageChange} />
       </div>
     </div>

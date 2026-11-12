@@ -18,7 +18,7 @@ export function SecondaryButton({ variant = 'info', children, ...rest }: Props) 
   const Icon = icons[variant];
 
   return (
-    <button type="button" className={`secondary-button secondary-button--${variant}`} {...rest}>
+    <button type="button" className={`secondary-button secondary-button-${variant}`} {...rest}>
       <Icon />
       {children}
     </button>

@@ -19,18 +19,18 @@ type Props = {
 };
 
 export function Row({ user, status, variant = 'blue', description, amount, selected, disabled, loading, onSelect }: Props) {
-  const cls = ['row', selected && 'row--selected', disabled && 'row--disabled'].filter(Boolean).join(' ');
+  const cls = ['row', selected && 'row-selected', disabled && 'row-disabled'].filter(Boolean).join(' ');
 
   return (
     <div className={cls}>
-      <span className="row__check">
+      <span className="row_check">
         <Checkbox checked={!!selected} disabled={disabled} onChange={(e) => onSelect?.(e.target.checked)} />
       </span>
       <Cell width={widths.user} loading={loading}>
         {user}
       </Cell>
-      <div className="row__status" style={{ width: widths.status }}>
-        {loading ? <div className="row__skeleton" /> : <Status variant={variant}>{status}</Status>}
+      <div className="row_status" style={{ width: widths.status }}>
+        {loading ? <div className="row_skeleton" /> : <Status variant={variant}>{status}</Status>}
       </div>
       <Cell width={widths.description} loading={loading}>
         {description}

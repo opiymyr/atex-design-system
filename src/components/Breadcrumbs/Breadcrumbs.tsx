@@ -13,9 +13,9 @@ export function Breadcrumbs({ items }: Props) {
   return (
     <nav className="breadcrumbs">
       {items.map((item, i) => (
-        <span key={i} className="breadcrumbs__part">
+        <span key={i} className="breadcrumbs_part">
           {i > 0 && (
-            <span className="breadcrumbs__sep">
+            <span className="breadcrumbs_sep">
               <ChevronRightIcon />
             </span>
           )}

@@ -1,7 +1,8 @@
 :root {
-body {
-  margin: 0;
-  font-family: 'Google Sans', system-ui, sans-serif;
-  background: #e0dddd;
+   body {
+     margin: 0;
+     font-family: 'Google Sans', system-ui, sans-serif;
+     background: var(--color-page);
+     color: var(--color-text);
 }
 }

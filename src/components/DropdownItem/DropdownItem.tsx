@@ -8,7 +8,7 @@ type Props = ButtonHTMLAttributes<HTMLButtonElement> & {
 };
 
 export function DropdownItem({ error, selected, children, ...rest }: Props) {
-  const cls = ['dropdown-item', error && 'dropdown-item--error', selected && 'dropdown-item--selected']
+  const cls = ['dropdown-item', error && 'dropdown-item-error', selected && 'dropdown-item-selected']
     .filter(Boolean)
     .join(' ');
 

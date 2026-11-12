@@ -1,4 +1,7 @@
-:root {
+/* светлая тема */
+:root,
+[data-theme='light'] {
+  color-scheme: light;
   --color-primary: rgb(18, 70, 226);
   --color-primary-dark: rgb(5, 60, 184);
   --color-primary-bg: rgb(231, 236, 252);
@@ -31,6 +34,60 @@
   --color-cell: color-mix(in srgb, var(--color-primary-bg) 55%, white);
   --color-cell-header: color-mix(in srgb, var(--color-primary) 15%, white);
 
+  --color-page: #e0dddd;                
+  --color-surface: var(--color-white);   
+  --color-text: var(--color-black);      
+  --color-on-primary: var(--color-white); 
+  --color-accent: var(--color-primary); 
+
+  --color-focus-bg: color-mix(in srgb, var(--color-primary) 18%, white);
+  --color-green-bg-hover: var(--color-green-bg-hover);
+  --color-red-bg-hover: var(--color-red-bg-hover);
+  --color-orange-bg-hover: var(--color-orange-bg-hover);
+  --color-purple-bg: var(--color-purple-bg);
+}
+
+/* темная тема */
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  --color-page: #060a15;
+  --color-surface: #101722;
+  --color-text: #edf2fa;
+  --color-gray-dark: #c0cce0;
+  --color-gray: #91a3bc;
+
+  --color-primary: #1246e2;
+  --color-primary-dark: #053cb8;
+  --color-on-primary: #ffffff;
+  --color-accent: #99bbff;
+  --color-primary-bg: #1c2739;
+  --color-focus-bg: #243758;
+  --color-sky: #30496e;
+
+  --color-cell: #182131;
+  --color-cell-header: #243758;
+  --color-light: #222e43;
+  --color-gray-light: #34445c;
+
+  --color-green: #83e4a4;
+  --color-green-bg: #193b39;
+  --color-green-bg-hover: #254e3c;
+
+  --color-red: #ff91ab;
+  --color-red-bright: #ff91ab;
+  --color-red-bg: #3c222f;
+  --color-red-bg-hover: #522b3a;
+
+  --color-orange: #ffd18a;
+  --color-orange-bg: #3f301f;
+  --color-orange-bg-hover: #554027;
+
+  --color-purple: #d4adff;
+  --color-purple-bg: #35234d;
+}
+
+:root {
   --radius-sm: 6px;
   --radius-md: 8px;
   --radius-lg: 20px;

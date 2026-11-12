@@ -7,5 +7,5 @@ type Props = {
 };
 
 export function Badge({ variant = 'blue', children }: Props) {
-  return <span className={`badge badge--${variant}`}>{children}</span>;
+  return <span className={`badge badge-${variant}`}>{children}</span>;
 }

@@ -7,7 +7,7 @@ const meta = {
   component: HeaderRow,
   decorators: [
     (Story) => (
-      <div style={{ width: 1318, background: 'var(--color-white)' }}>
+      <div style={{ width: 1318, background: 'var(--color-surface)' }}>
         <Story />
       </div>
     ),

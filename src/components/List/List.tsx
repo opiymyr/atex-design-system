@@ -7,7 +7,7 @@ export function List({ children, footer }: Props) {
   return (
     <div className="list">
       {children}
-      {footer && <div className="list__footer">{footer}</div>}
+      {footer && <div className="list_footer">{footer}</div>}
     </div>
   );
 }

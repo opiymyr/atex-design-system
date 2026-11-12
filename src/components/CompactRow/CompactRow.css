@@ -13,11 +13,11 @@
   background: var(--color-cell-header);
 }
 
-.compact-row--loading:hover {
+.compact-row-loading:hover {
   background: var(--color-cell);
 }
 
-.compact-row--disabled {
+.compact-row-disabled {
   opacity: 0.5;
   pointer-events: none;
 }
@@ -26,7 +26,7 @@
   gap: 0;
 }
 
-.compact-row__field {
+.compact-row_field {
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -35,7 +35,7 @@
   padding: 0 12px;
   border-radius: var(--radius-full);
   background: var(--color-primary-bg);
-  color: var(--color-primary);
+  color: var(--color-accent);
   font-size: 16px;
   font-weight: 500;
 }

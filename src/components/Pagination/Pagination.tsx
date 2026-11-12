@@ -23,7 +23,7 @@ export function Pagination({ page, total, onChange, compact }: Props) {
         <button type="button" className="page" onClick={() => go(page - 1)}>
           <ChevronLeftIcon />
         </button>
-        <span className="page page--active">{page}</span>
+        <span className="page page-active">{page}</span>
         <button type="button" className="page" onClick={() => go(page + 1)}>
           <ChevronRightIcon />
         </button>
@@ -39,12 +39,12 @@ export function Pagination({ page, total, onChange, compact }: Props) {
 
       {getPages(page, total).map((p, i) =>
         p === '...' ? (
-          <span key={i} className="page page--dots">...</span>
+          <span key={i} className="page page-dots">...</span>
         ) : (
           <button
             key={i}
             type="button"
-            className={p === page ? 'page page--active' : 'page'}
+            className={p === page ? 'page page-active' : 'page'}
             onClick={() => go(p as number)}
           >
             {p}

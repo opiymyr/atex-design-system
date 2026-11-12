@@ -20,15 +20,15 @@ export function Alert({ variant = 'info', title, text, compact, onClose }: Props
   };
 
   return (
-    <div className={`alert alert--${variant}${compact ? ' alert--toast' : ''}`}>
-      <span className="alert__icon">
+    <div className={`alert alert-${variant}${compact ? ' alert-toast' : ''}`}>
+      <span className="alert_icon">
         <BadgeIcon />
       </span>
-      <div className="alert__body">
-        <div className="alert__title">{title}</div>
-        {text && <div className="alert__text">{text}</div>}
+      <div className="alert_body">
+        <div className="alert_title">{title}</div>
+        {text && <div className="alert_text">{text}</div>}
       </div>
-      <button type="button" className="alert__close" onClick={close}>
+      <button type="button" className="alert_close" onClick={close}>
         <CloseIcon />
       </button>
     </div>

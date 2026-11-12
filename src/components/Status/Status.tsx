@@ -12,7 +12,7 @@ type Props = {
 
 export function Status({ variant = 'blue', icon = <StatusIcon />, children }: Props) {
   return (
-    <span className={`status status--${variant}`}>
+    <span className={`status status-${variant}`}>
       {icon}
       <span>{children}</span>
     </span>

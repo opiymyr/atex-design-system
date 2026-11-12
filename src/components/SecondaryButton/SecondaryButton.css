@@ -22,33 +22,33 @@
   color: var(--fg-hover, var(--fg));
 }
 
-.secondary-button--white {
-  --fg: var(--color-black);
-  --bg: var(--color-white);
+.secondary-button-white {
+  --fg: var(--color-text);
+  --bg: var(--color-surface);
   --bg-hover: var(--color-sky);
-  --fg-hover: var(--color-primary);
+  --fg-hover: var(--color-accent);
 }
 
-.secondary-button--info {
-  --fg: var(--color-primary);
+.secondary-button-info {
+  --fg: var(--color-accent);
   --bg: var(--color-primary-bg);
   --bg-hover: var(--color-sky);
 }
 
-.secondary-button--success {
+.secondary-button-success {
   --fg: var(--color-green);
   --bg: var(--color-green-bg);
-  --bg-hover: color-mix(in srgb, var(--color-green) 25%, white);
+  --bg-hover: var(--color-green-bg-hover);
 }
 
-.secondary-button--danger {
+.secondary-button-danger {
   --fg: var(--color-red-bright);
   --bg: var(--color-red-bg);
-  --bg-hover: color-mix(in srgb, var(--color-red-bright) 30%, white);
+  --bg-hover: var(--color-red-bg-hover);
 }
 
-.secondary-button--warning {
+.secondary-button-warning {
   --fg: var(--color-orange);
   --bg: var(--color-orange-bg);
-  --bg-hover: color-mix(in srgb, var(--color-orange) 30%, white);
+  --bg-hover: var(--color-orange-bg-hover);
 }

@@ -7,9 +7,14 @@
   height: 52px;
   padding: 4px;
   border-radius: var(--radius-full);
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 .navigation--compact {
   width: 196px;
+}
+
+.navigation .navigcom:not(:hover):not(.navigcom-selected),
+.navigation .navig:not(:hover):not(.navigcom-selected):not(.navig-selected) {
+  background: transparent;
 }

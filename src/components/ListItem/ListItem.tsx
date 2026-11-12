@@ -11,17 +11,17 @@ type Props = {
 export function ListItem({ title, text, disabled, onClick }: Props) {
   return (
     <div
-      className={disabled ? 'list-item list-item--disabled' : 'list-item'}
+      className={disabled ? 'list-item list-item-disabled' : 'list-item'}
       onClick={disabled ? undefined : onClick}
     >
-      <span className="list-item__avatar">
+      <span className="list-item_avatar">
         <UserIcon />
       </span>
-      <div className="list-item__body">
-        <div className="list-item__title">{title}</div>
-        <div className="list-item__text">{text}</div>
+      <div className="list-item_body">
+        <div className="list-item_title">{title}</div>
+        <div className="list-item_text">{text}</div>
       </div>
-      <span className="list-item__dots">
+      <span className="list-item_dots">
         <DotsIcon />
       </span>
     </div>

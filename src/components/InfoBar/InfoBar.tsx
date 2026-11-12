@@ -15,11 +15,11 @@ export function InfoBar({ status, variant, icon, loading }: Props) {
   return (
     <div className="info-bar">
       {loading ? (
-        <span className="info-bar__skeleton" />
+        <span className="info-bar_skeleton" />
       ) : (
         <Status variant={variant} icon={icon}>{status}</Status>
       )}
-      <span className="info-bar__icon">
+      <span className="info-bar_icon">
         <DotsIcon />
       </span>
     </div>

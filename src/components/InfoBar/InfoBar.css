@@ -4,10 +4,10 @@
   justify-content: space-between;
   gap: 146px;
   height: 28px;
-  color: var(--color-primary);
+  color: var(--color-accent);
 }
 
-.info-bar__icon {
+.info-bar_icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,11 +15,11 @@
   height: 28px;
 }
 
-.info-bar__icon svg {
+.info-bar_icon svg {
   flex-shrink: 0;
 }
 
-.info-bar__skeleton {
+.info-bar_skeleton {
   width: 92px;
   height: 28px;
   border-radius: var(--radius-full);

@@ -11,7 +11,7 @@ type Props = TextareaHTMLAttributes<HTMLTextAreaElement> & {
 export function Textarea({ status, width, height, maxLength = 450, value, defaultValue, disabled, onChange, ...rest }: Props) {
   const [inner, setInner] = useState(String(defaultValue ?? ''));
   const text = value === undefined ? inner : String(value);
-  const cls = ['textarea', status && `textarea--${status}`, disabled && 'textarea--disabled']
+  const cls = ['textarea', status && `textarea-${status}`, disabled && 'textarea-disabled']
     .filter(Boolean)
     .join(' ');
 
@@ -19,7 +19,7 @@ export function Textarea({ status, width, height, maxLength = 450, value, defaul
     <div className={cls} style={{ width, height }}>
       <textarea
         {...rest}
-        className="textarea__field"
+        className="textarea_field"
         value={text}
         maxLength={maxLength}
         disabled={disabled}
@@ -28,7 +28,7 @@ export function Textarea({ status, width, height, maxLength = 450, value, defaul
           onChange?.(e);
         }}
       />
-      <span className="textarea__count">
+      <span className="textarea_count">
         {maxLength - text.length}/{maxLength}
       </span>
     </div>

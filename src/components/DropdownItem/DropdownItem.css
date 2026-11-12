@@ -9,8 +9,8 @@
   padding: 0;
   border: none;
   border-radius: var(--radius-full);
-  background: var(--color-white);
-  color: var(--color-black);
+  background: var(--color-surface);
+  color: var(--color-text);
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
@@ -20,12 +20,12 @@
 
 .dropdown-item:hover:not(:disabled) {
   background: var(--color-sky);
-  color: var(--color-primary);
+  color: var(--color-accent);
 }
 
 .dropdown-item:active:not(:disabled) {
   background: var(--color-cell-header);
-  color: var(--color-primary);
+  color: var(--color-accent);
 }
 
 .dropdown-item:disabled {
@@ -34,15 +34,15 @@
   cursor: not-allowed;
 }
 
-.dropdown-item--error,
-.dropdown-item--error:hover:not(:disabled),
-.dropdown-item--error:active:not(:disabled) {
+.dropdown-item-error,
+.dropdown-item-error:hover:not(:disabled),
+.dropdown-item-error:active:not(:disabled) {
   background: var(--color-red-bg);
   color: var(--color-red-bright);
 }
 
-.dropdown-item--selected,
-.dropdown-item--selected:hover:not(:disabled) {
+.dropdown-item-selected,
+.dropdown-item-selected:hover:not(:disabled) {
   background: var(--color-cell-header);
-  color: var(--color-primary);
+  color: var(--color-accent);
 }

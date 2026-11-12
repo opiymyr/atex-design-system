@@ -7,11 +7,11 @@
   height: 396px;
   padding: 12px 0;
   border-radius: var(--radius-lg);
-  background: var(--color-white);
+  background: var(--color-surface);
 }
 
 
-.table__footer {
+.table_footer {
   display: flex;
   justify-content: flex-end;
   padding: 8px 12px 0;
